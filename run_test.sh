@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=$1 python -u main.py --arch FaceParseNet50 --train False --pretrained_model $2
+CUDA_VISIBLE_DEVICES=$1 python -u main.py --arch FaceParseNet18 --train False --pretrained_model $2
