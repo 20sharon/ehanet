@@ -16,7 +16,7 @@ def get_parameters():
                                      'FaceParseNet34', "FaceParseNet50", "FaceParseNet101", "EHANet18"], required=True)
 
     # Training setting
-    parser.add_argument('--epochs', type=int, default=50, #200,
+    parser.add_argument('--epochs', type=int, default=45, #200,
                         help='how many times to update the generator')
     parser.add_argument('--pretrained_model', type=int, default=0)
     parser.add_argument('--batch_size', type=int, default=10)
