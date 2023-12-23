@@ -1,5 +1,7 @@
 import argparse
 
+import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:32"
 
 def str2bool(v):
     return v.lower() in ('true')
