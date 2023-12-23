@@ -79,7 +79,7 @@ class Trainer(object):
         criterion = CriterionAll()
         criterion.cuda()
         best_miou = 0
-        best_f1 = 0.85
+        best_f1 = 0
         # Data iterator
         for epoch in range(start, self.epochs):
             self.G.train()
