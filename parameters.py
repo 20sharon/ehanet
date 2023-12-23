@@ -36,29 +36,29 @@ def get_parameters():
     # Path
     parser.add_argument('--img_path', type=str,
                         #default='/var/mplab_share_data/xmc112062670/CelebAMask-HQ/CelebA-HQ-img/train')
-                        default='/kaggle/input/train-img-zip')
+                        default='/kaggle/input/train-img-zip/train-img')
     parser.add_argument('--label_path', type=str,
                         #default='./Data_preprocessing/train_label')
                         #default='/var/mplab_share_data/xmc112062670/CelebAMask-HQ/mask/train')
-                        default='/kaggle/input/train-label-zip')
+                        default='/kaggle/input/train-label-zip/train-label')
                         
     parser.add_argument('--model_save_path', type=str, default='./models')
     parser.add_argument('--sample_path', type=str, default='./samples')
     
     parser.add_argument('--val_img_path', type=str,
                         #default='/var/mplab_share_data/xmc112062670/CelebAMask-HQ/CelebA-HQ-img/test')
-                        default='/kaggle/input/test-img-zip')
+                        default='/kaggle/input/test-img-zip/test-img')
     parser.add_argument('--val_label_path', type=str,
                         #default='/var/mplab_share_data/xmc112062670/CelebAMask-HQ/mask/test')
-                        default='/kaggle/input/test-label-zip')
+                        default='/kaggle/input/test-label-zip/test-label')
 
     parser.add_argument('--test_image_path', type=str,
                         #default='./Data_preprocessing/test_img')
                         #default='/var/mplab_share_data/xmc112062670/CelebAMask-HQ/CelebA-HQ-img/test/')
-                        default='/kaggle/input/test-img-zip')
+                        default='/kaggle/input/test-img-zip/test-img')
     parser.add_argument('--test_label_path', type=str,
                         #default='/var/mplab_share_data/xmc112062670/CelebAMask-HQ/mask/test')
-                        default='/kaggle/input/test-label-zip')
+                        default='/kaggle/input/test-label-zip//test-label')
     parser.add_argument('--test_pred_label_path', type=str,
                         default='./test_pred_results') # test pred results path
     parser.add_argument('--test_colorful', type=str2bool,
