@@ -64,7 +64,7 @@ def get_parameters():
     parser.add_argument('--test_pred_label_path', type=str,
                         default='./test_pred_results') # test pred results path
     parser.add_argument('--test_colorful', type=str2bool,
-                        default=False) # color test results switch
+                        default=True) #False) # color test results switch
     parser.add_argument('--test_color_label_path', type=str,
                         default='./test_color_visualize') # colorful test pred results path
 
