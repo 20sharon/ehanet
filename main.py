@@ -36,6 +36,11 @@ def main(config):
         trainer = Trainer(data_loader.loader(), config, val_loader.loader())
         trainer.train()
     else:
+        #add
+        make_folder(config.sample_path, config.arch) # test results sample
+        make_folder(config.test_pred_label_path, config.arch) # test pred results
+        make_folder(config.test_color_label_path, config.arch) # colorful test pred results
+        #addend
         data_loader = CustomDataLoader(config.test_image_path, config.test_label_path, config.imsize,
                                        config.batch_size, num_workers=config.num_workers, mode=config.train)
         tester = Tester(data_loader.loader(), config)
