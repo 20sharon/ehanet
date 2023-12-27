@@ -16,7 +16,7 @@ def get_parameters():
                                      'FaceParseNet34', "FaceParseNet50", "FaceParseNet101", "EHANet18"], required=True)
 
     # Training setting
-    parser.add_argument('--epochs', type=int, default=45, #200,
+    parser.add_argument('--epochs', type=int, default=200,
                         help='how many times to update the generator')
     parser.add_argument('--pretrained_model', type=int, default=0)
     parser.add_argument('--batch_size', type=int, default=10)
@@ -64,7 +64,7 @@ def get_parameters():
     parser.add_argument('--test_pred_label_path', type=str,
                         default='./test_pred_results') # test pred results path
     parser.add_argument('--test_colorful', type=str2bool,
-                        default=True) #False) # color test results switch
+                        default=False) # color test results switch
     parser.add_argument('--test_color_label_path', type=str,
                         default='./test_color_visualize') # colorful test pred results path
 
