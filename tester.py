@@ -105,7 +105,7 @@ class Tester(object):
                 for k in range(self.batch_size):
                     # save_image(labels_predict_color[k], osp.join(self.test_color_label_path, str(index * self.batch_size + k) +'.png'))
                     cv2.imwrite(osp.join(self.test_pred_label_path, str(index * self.batch_size + k) +'.png'), labels_predict_plain[k])
-                    save_image(compare_predict_color[k], osp.join(self.test_color_label_path, str(index * self.batch_size + k) +'.png'))
+                    #save_image(compare_predict_color[k], osp.join(self.test_color_label_path, str(index * self.batch_size + k) +'.png'))
 
         print("----------------- Runtime Performance ------------------")
         print('Total %d batches (%d images) tested.' % (index + 1, (index+1)*images.size(0)))
