@@ -182,8 +182,9 @@ class Trainer(object):
     def load_pretrained_model(self):
         # self.G.load_state_dict(torch.load(osp.join(
         #     self.model_save_path, '{}_G.pth'.format('41_0.7743'))))
-        self.G.load_state_dict(torch.load(osp.join(
-            self.model_save_path, '60_0.7746_G.pth')))
+        #self.G.load_state_dict(torch.load(osp.join(
+        #    self.model_save_path, '60_0.7746_G.pth')))
+        self.G.load_state_dict(torch.load(osp.join(self.model_save_path)))
         print('Loaded trained models (step: {})...!'.format(self.pretrained_model))
 
     def reset_grad(self):
