@@ -44,7 +44,7 @@ def get_parameters():
                         #default='/var/mplab_share_data/xmc112062670/CelebAMask-HQ/mask/train')
                         default='/kaggle/input/new-train-label-zip/train_label')
                         
-    parser.add_argument('--model_save_path', type=str, default='/kaggle/input/models')  #'./models')
+    parser.add_argument('--model_save_path', type=str, default='./models') #'/kaggle/input/models') 
     parser.add_argument('--sample_path', type=str, default='./samples')
     
     parser.add_argument('--val_img_path', type=str,
